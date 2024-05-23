@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu basico</title>
+    <style>
+      body {
+        background-color: rgb(0, 0, 0);
+      }
+    </style>
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="cardstyle.css">
+    <link rel="stylesheet" href="style.css" />
+   <link rel="stylesheet" href="searchbar.css">
+   <link rel="stylesheet" href="busquedaCarros.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="navbar">
+          <div class="barlogo">
+            <img src="logo.png" alt="logo_imagen" class="fotologo" />
+    
+            <a class="News" href="#news">Ubicacion</a>
+            <a href="#contact">Contacto</a>
+            <a href="#about">About</a>
+
+          
+
+            <div class="buscar">
+              <div class="search-input-box">
+                <input class="imputtext" type="text" placeholder= "¿Qué quieres buscar?" />
+                <a href="#" target="_blank">
+                  <i class="fa-solid fa-magnifying-glass icon"> </i>
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="mi-perfil-container"> 
+            <a href="#profile" class="mi-perfil">Mi Perfil</a> 
+        </div>
+       
+      </nav>
+    </header>
+
+    /* Card flex */
+
+    <div class="cards">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              src="imagenes/bugatti.avif"
+              alt="Bugatti"
+              style="width: 400px; height: 250px"
+            />
+          </div>
+          <div class="flip-card-back">
+            <div class="texto">
+              <h1 class="primera">Bugatti Veyron</h1>
+              <h3>Precio</h3>
+              <p>2,250,000$</p>
+            </div>
+          
+          </div>
+        </div>
+        
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              src="imagenes/aventador.jpg"
+              alt="Avatar"
+              style="width: 400px; height: 250px"
+            />
+          </div>
+          <div class="flip-card-back">
+            <h1>Lamborghini Aventador</h1>
+            <h3>Precio</h3>
+            <p>700,000$</p>
+          </div>
+          
+
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              src="imagenes/mclaren.jpg"
+              alt="Avatar"
+              style="width: 400px; height: 250px"
+            />
+          </div>
+          <div class="flip-card-back">
+            <h1>McLaren 570</h1>
+            <h3>Precio</h3>
+            <p>250,000$</p>
+            
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    /* Buscar autos */
+    <div class="cuadrado">
+      <ul class="expandable-list">
+        <li class="deportivo"> <img class="deportivo1" src="imagenes/carro-deportivo.png" alt=""> Deportivos</li>
+        
+      
+    </ul>
+
+    </div>
+    
+    <div class="search-bar">
+      <input type="text">
+      <div class="actions">
+        <button><span class="material-icons">mic</span></button>
+        <button><span class="material-icons">search</span></button>
+ 
+
+  </body>
+</html>

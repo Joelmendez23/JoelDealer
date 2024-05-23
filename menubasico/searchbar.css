@@ -1,0 +1,26 @@
+.buscar {
+    
+     height: 40px;
+     width: 200px;
+     background-color:#333;
+   }
+.search-input-box {
+  margin-left: 180px;
+  width: 600px;
+  height: 1000px;
+}
+.imputtext{
+  color: brown;  
+height: 30px;
+width: 300px;
+margin-top: 5px;
+border-radius: 20px;
+background-color: #ffffff;
+} 
+
+.numeros{
+  margin-left: 180px;
+  width: 600px;
+  height: 1000px;
+}
+

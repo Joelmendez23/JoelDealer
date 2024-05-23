@@ -1,0 +1,57 @@
+/* Estilos para el cuadro en el medio */
+.cuadrado {
+    width: 500px;
+    height: 800px;
+   background-color: aquamarine;
+    position: absolute;
+    top: 118px; /* Ajusta la posición hacia abajo */
+    right: 650px; /* Ajusta la posición hacia la izquierda */
+    left: 450px;
+    float: left; /* Alinear los elementos en línea */
+  
+
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+}
+
+.expandable-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 200px;
+}
+
+.expandable-list li {
+    background-color: #f4f4f4;
+    margin: 15px 0;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.5s ease, background-color 0.5s ease;
+    cursor: pointer;
+    width: 200px;
+}
+
+.expandable-list li:hover {
+    transform: scale(1.2);
+    background-color: #ddd;
+}
+
+ .deportivo{
+position: absolute;
+background: transparent;
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+
+ }
+ .deportivo1{
+
+width: 100px;
+height: 100px;
+position: absolute;
+left: 72px;
+
+
+}

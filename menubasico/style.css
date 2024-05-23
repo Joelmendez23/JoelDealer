@@ -1,0 +1,124 @@
+body {
+  background-image: url("imagenes/fff1.jpg"); /* Ruta de la imagen de fondo */
+  background-size: cover; /* Ajustar la imagen al tamaño del cuerpo */
+  background-repeat: no-repeat; /* Evitar que la imagen se repita */
+  background-position: center; /* Centrar la imagen */
+}
+
+/* Estilos generales para la barra de navegación */
+.navbar {
+  background-color: #333; /* Color de fondo */
+  overflow: hidden; /* Para manejar elementos flotantes */
+  border-radius: 20px;
+}
+
+/* Estilos para los enlaces dentro de la barra de navegación */
+.navbar a {
+  float: left; /* Alinear los elementos en línea */
+  margin-left: 50px;
+  display: block; /* Convertir los enlaces en elementos de bloque */
+  color: #f2f2f2; /* Color del texto */
+  text-align: center; /* Alinear el texto al centro */
+  padding: 14px 25px; /* Espaciado interno */
+  text-decoration: none; /* Quitar subrayado del texto */
+}
+
+/* Cambio de color de fondo al pasar el cursor sobre los enlaces */
+.navbar a:hover {
+  background-color: #ddd; /* Color de fondo al pasar el cursor */
+  color: #333; /* Color del texto al pasar el cursor */
+}
+
+/* Estilos para el enlace activo (página actual) */
+.navbar a.active {
+  background-color: #04aa6d; /* Color de fondo del enlace activo */
+  color: white; /* Color del texto del enlace activo */
+}
+
+/* Estilos para el logotipo */
+.fotologo {
+  height: 90px; /* Aumentar la altura del logotipo en 40px */
+  width: auto; /* Ancho automático para mantener la proporción */
+  margin-right: 10px; /* Espacio a la derecha del logotipo */
+}
+
+/* Estilos para el contenedor de la barra de navegación y el logotipo */
+.barlogo {
+  display: flex; /* Utilizar el modelo de caja flexible para alinear elementos */
+  align-items: center; /* Alinear verticalmente los elementos */
+}
+
+/* Estilos para el nuevo enlace */
+.navbar a:last-child {
+  float: right; /* Alinear el enlace a la derecha */
+}
+
+/* Estilos para el enlace "Mi Perfil" */
+.mi-perfil {
+  color: #f2f2f2; /* Color del texto */
+  text-decoration: none; /* Quitar subrayado del texto */
+  margin-left: 20px; /* Espacio entre "Mi Perfil" y otros enlaces */
+  margin-right: 15px;
+  margin-top: -70px;
+}
+
+/*bara de busqueda */
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+ 
+}
+body{
+  font-family: sans-serif;
+  
+}
+.search-bar{
+  border: solid 1px #ccc;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: cexanter;
+  padding: 5px 10px;
+  margin: 100px auto;
+}
+.search-bar:focus-within{
+  border: solid 1px #aaa;
+  box-shadow: 0px 2px 5px rgba(35, 35, 36, 0.2)
+}
+.search-bar input{
+  border: none;
+  outline: none;
+  pad: 10px;
+  font-size: 18px;
+  flex: auto;
+  
+}
+.search-bar .actions{
+  display: flex;
+  gap: 5px;
+}
+.search-bar .actions button{
+  border:  none;
+ outline:  none;
+ background: none;
+ cursor: pointer;
+ color: #999;
+}
+.search-bar .actions button:hover{
+  color: #2979e2;
+  width: ;
+  height: ;
+}
+
+
