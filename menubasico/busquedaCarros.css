@@ -1,18 +1,27 @@
-/* Estilos para el cuadro en el medio */
 .cuadrado {
-    width: 500px;
+    width: 350px;
     height: 800px;
-   background-color: aquamarine;
+    background-color: rgba(0, 244, 163, 0);
     position: absolute;
     top: 118px; /* Ajusta la posición hacia abajo */
-    right: 650px; /* Ajusta la posición hacia la izquierda */
-    left: 450px;
-    float: left; /* Alinear los elementos en línea */
-  
+    right: 0px; /* Posiciona el cuadro en la esquina derecha */
+    padding: 20px; /* Añade  separación interna */
+    box-sizing: border-box; /* Incluye padding y border en el tamaño total */
+}
+.tipos{
+    background-color: rgba(219, 219, 234, 0.006);
+position: absolute;
+top:2px;
+left: auto;
+right: 15px;
 
-  }
-  
-  body {
+
+}
+.tipovh{
+    color: rgba(176, 157, 157, 0.906);
+}
+
+body {
     font-family: Arial, sans-serif;
 }
 
@@ -20,38 +29,42 @@
     list-style-type: none;
     padding: 0;
     margin: 0;
-    width: 200px;
 }
 
 .expandable-list li {
-    background-color: #f4f4f4;
-    margin: 15px 0;
-    padding: 20px;
+    background-color: #b8b7b7fd;
+    margin: 50px auto; /* Aumenta el espacio entre los elementos */
+    padding: 50px;
     text-align: center;
     transition: transform 0.5s ease, background-color 0.5s ease;
     cursor: pointer;
-    width: 200px;
+    width: 200px; 
 }
 
 .expandable-list li:hover {
     transform: scale(1.2);
-    background-color: #ddd;
+    background-color: #dddddd;
 }
 
- .deportivo{
-position: absolute;
-background: transparent;
+.expandable-list li img {
+    display: block;
+    margin: 0 auto; 
+
+}
+
+.deportivo, .jeepetas, .motos, .camionetas, .camion {
+    background: transparent;
     height: 50px;
     width: 50px;
     border-radius: 10px;
+    position: relative; 
+    left: 60px;
+    
+}
 
- }
- .deportivo1{
-
-width: 100px;
-height: 100px;
-position: absolute;
-left: 72px;
-
-
+.deportivo1, .jeepetas1, .motos1, .camionetas1, .camion1 {
+    width: 110px;
+    height: 100px;
+    position: absolute;
+    top: 0;
 }

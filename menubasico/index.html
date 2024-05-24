@@ -4,50 +4,48 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Menu basico</title>
+    <title>Menu básico</title>
     <style>
       body {
         background-color: rgb(0, 0, 0);
       }
     </style>
     <link rel="shortcut icon" href="logo.png" type="image/x-icon" />
-    <link rel="stylesheet" href="cardstyle.css">
+    <link rel="stylesheet" href="cardstyle.css" />
     <link rel="stylesheet" href="style.css" />
-   <link rel="stylesheet" href="searchbar.css">
-   <link rel="stylesheet" href="busquedaCarros.css">
+    <link rel="stylesheet" href="searchbar.css" />
+    <link rel="stylesheet" href="busquedaCarros.css" />
+    <link rel="stylesheet" href="anuncios.css">
   </head>
   <body>
     <header>
       <nav>
         <div class="navbar">
           <div class="barlogo">
-            <img src="logo.png" alt="logo_imagen" class="fotologo" />
-    
-            <a class="News" href="#news">Ubicacion</a>
+            <img src="logo.png" alt="Logo de la empresa" class="fotologo" />
+            <a class="News" href="#news">Ubicación</a>
             <a href="#contact">Contacto</a>
             <a href="#about">About</a>
-
-          
-
             <div class="buscar">
-              <div class="search-input-box">
-                <input class="imputtext" type="text" placeholder= "¿Qué quieres buscar?" />
-                <a href="#" target="_blank">
-                  <i class="fa-solid fa-magnifying-glass icon"> </i>
-                </a>
+              <div class="buscador">
+                <input type="text" placeholder="Buscar..." />
+                <button type="submit">
+                  <img
+                    style="height: 23px; width: 28px"
+                    class="lupa"
+                    src="https://w7.pngwing.com/pngs/439/472/png-transparent-magnifying-glass-magnifying-glass-glass-photography-engine.png"
+                    alt="Buscar"
+                  />
+                </button>
               </div>
             </div>
-
           </div>
-
-          <div class="mi-perfil-container"> 
-            <a href="#profile" class="mi-perfil">Mi Perfil</a> 
+          <div class="mi-perfil-container">
+            <a href="#profile" class="mi-perfil">Mi Perfil</a>
+          </div>
         </div>
-       
       </nav>
     </header>
-
-    /* Card flex */
 
     <div class="cards">
       <div class="flip-card">
@@ -55,7 +53,7 @@
           <div class="flip-card-front">
             <img
               src="imagenes/bugatti.avif"
-              alt="Bugatti"
+              alt="Bugatti Veyron"
               style="width: 400px; height: 250px"
             />
           </div>
@@ -65,17 +63,15 @@
               <h3>Precio</h3>
               <p>2,250,000$</p>
             </div>
-          
           </div>
         </div>
-        
       </div>
       <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
             <img
               src="imagenes/aventador.jpg"
-              alt="Avatar"
+              alt="Lamborghini Aventador"
               style="width: 400px; height: 250px"
             />
           </div>
@@ -84,8 +80,6 @@
             <h3>Precio</h3>
             <p>700,000$</p>
           </div>
-          
-
         </div>
       </div>
       <div class="flip-card">
@@ -93,7 +87,7 @@
           <div class="flip-card-front">
             <img
               src="imagenes/mclaren.jpg"
-              alt="Avatar"
+              alt="McLaren 570"
               style="width: 400px; height: 250px"
             />
           </div>
@@ -101,29 +95,68 @@
             <h1>McLaren 570</h1>
             <h3>Precio</h3>
             <p>250,000$</p>
-            
           </div>
-
         </div>
       </div>
     </div>
 
-    /* Buscar autos */
+    
+    <!-- Barra Derecha-->
     <div class="cuadrado">
       <ul class="expandable-list">
-        <li class="deportivo"> <img class="deportivo1" src="imagenes/carro-deportivo.png" alt=""> Deportivos</li>
-        
-      
-    </ul>
-
+        <li class="deportivo">
+          <img
+            class="deportivo1"
+            src="imagenes/carro-deportivo.png"
+            alt="Icono de carro deportivo"
+          />
+        </li>
+        <li class="jeepetas">
+          <img
+            class="jeepetas1"
+            src="imagenes/jeepeta.png"
+            alt="Icono de jeepeta"
+          />
+        </li>
+        <li class="motos">
+          <img class="motos1" src="imagenes/moto.png" alt="Icono de moto" />
+        </li>
+        <li class="camionetas">
+          <img
+            class="camionetas1"
+            src="imagenes/camioneta.png"
+            alt="Icono de camioneta"
+          />
+        </li>
+        <li class="camion">
+          <img
+            class="camion1"
+            src="imagenes/camion.png"
+            alt="Icono de camión"
+          />
+        </li>
+      </ul>
+      <div class="tipos">
+        <h2 class="tipovh">Tipos de Vehiculos</h2>
+      </div>
     </div>
-    
-    <div class="search-bar">
-      <input type="text">
-      <div class="actions">
-        <button><span class="material-icons">mic</span></button>
-        <button><span class="material-icons">search</span></button>
- 
+    <!-- anuncio inf. izquierdo-->
+    <div class="anuncio">
+      <h2>Financia tu Carro</h2>
+      <p>
+        Calcula tu cuota con nuestra nueva herramienta de financiamiento.
+        Comienza completando el valor del vehículo y años de financiamiento para
+        seleccionar tu entidad financiera:
+      </p>
+      <form>
+        <label for="valor">Valor del vehículo:</label>
+        <input type="text" id="valor" name="valor" placeholder="RD$" />
+        <label for="anios">Años de financiamiento:</label>
+        <input type="number" id="anios" name="anios" min="1" max="10" />
+        <button type="submit">Calcular</button>
+      </form>
+    </div>
 
+    
   </body>
 </html>
