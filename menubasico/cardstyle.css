@@ -8,6 +8,7 @@ body {
   align-items: flex-start; /* Alinear las tarjetas a la izquierda */
   margin-left: 20px; /* Espacio desde el borde izquierdo */
   margin-top: 40px;
+
 }
 
 .flip-card {
@@ -17,6 +18,7 @@ body {
   border: 1px solid #f1f1f100;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
   margin-bottom: 20px; /* Espacio entre las tarjetas */
+
 }
 
 /* This container is needed to position the front and back side */
@@ -27,6 +29,7 @@ body {
   text-align: center;
   transition: transform 0.5s;
   transform-style: preserve-3d;
+
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
@@ -56,4 +59,3 @@ body {
   color: white;
   transform: rotateX(180deg); /* Asegúrate de que la cara trasera esté girada */
 }
-
