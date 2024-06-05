@@ -1,3 +1,5 @@
+/* Inferior Izquierdo */
+
 .anuncio {
     background-color: #f8f9fa;
     border: 1px solid #ced4da;
@@ -5,10 +7,10 @@
     padding: 20px;
     width: 400px;
     height: 350px;
-    position: relative;
+    position: absolute;
     left: 480px;
     top:auto;
-    bottom: 300px;
+    bottom: 0px;
 }
 
 .anuncio h2 {
@@ -52,4 +54,42 @@
 .anuncio button:hover {
     
     background-color: #0056b3;
+}
+
+/* Inferior Derecho */
+
+.marcas {
+    background-color: #f8f9fa;
+    border: 1px solid #ced4da;
+    border-radius: 10px;
+    padding: 20px;
+    width: 520px;
+    height: 350px;
+    position: absolute;
+    left: 900px;
+    bottom: 0px;
+}
+
+.marcas ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.marcas li {
+    flex: 0 0 33.33%;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+}
+
+.marcas img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto 10px;
+    height: 85px;
+    width: auto;
 }

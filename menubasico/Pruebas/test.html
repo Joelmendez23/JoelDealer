@@ -16,17 +16,22 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="slider">
-        <div class="slides">
-            <div class="slide"><img src="imagenes/aventador.jpg" alt="Foto 1"></div>
-            <div class="slide"><img src="imagenes/bugatti.avif" alt="Foto 2"></div>
-            <div class="slide"><img src="imagenes/mclaren.jpg" alt="Foto 3"></div>
+        <div id="sidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <h2>Mi Perfil</h2>
+            <img src="https://via.placeholder.com/150" alt="Profile Picture" class="profile-pic">
+            <p><strong>Nombre:</strong> Tu Nombre</p>
+            <p><strong>Correo:</strong> tunombre@ejemplo.com</p>
+            <p><strong>Teléfono:</strong> +123456789</p>
+            <p><strong>Biografía:</strong> Aquí va una breve biografía sobre ti.</p>
         </div>
-    </div>
-    <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
-    <button class="next" onclick="changeSlide(1)">&#10095;</button>
-
-    <script src="scripts.js"></script>
+    
+        <div class="main-content">
+            <button class="openbtn" onclick="openNav()">&#9776; Información de Perfil</button>
+        </div>
+    
+        <script src="script.js"></script>
+    
 </body>
 </html>
 </body>

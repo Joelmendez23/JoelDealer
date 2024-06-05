@@ -1,54 +1,57 @@
-
-.slider {
-    position: relative;
-    width: 500px;
-    height: 300px;
-    overflow: hidden;
-    border: 2px solid #ddd;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+body {
+    font-family: "Arial", sans-serif;
 }
 
-.slides {
-    display: flex;
-    width: 100%;
+.sidebar {
     height: 100%;
-    transition: transform 0.5s ease-in-out;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;  /* Cambiado de left a right */
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    color: white;
 }
 
-.slide {
-    min-width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-}
-
-.slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/* Navigation Buttons */
-button {
+.sidebar .closebtn {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0,0,0,0.5);
+    top: 20px;
+    left: 25px; /* Cambiado de right a left */
+    font-size: 36px;
+}
+
+.sidebar h2 {
+    padding-left: 15px;
+}
+
+.sidebar .profile-pic {
+    display: block;
+    margin: 15px auto;
+    border-radius: 50%;
+}
+
+.sidebar p {
+    padding: 15px;
+    margin: 0;
+}
+
+.main-content {
+    transition: margin-right 0.5s;  /* Cambiado de margin-left a margin-right */
+    padding: 16px;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
     color: white;
     border: none;
-    padding: 10px;
-    cursor: pointer;
-    z-index: 10;
-    font-size: 18px;
+    padding: 10px 15px;
 }
 
-button:hover {
-    background-color: rgba(0,0,0,0.8);
-}
-
-.prev {
-    left: 10px;
-}
-
-.next {
-    right: 10px;
+.openbtn:hover {
+    background-color: #444;
 }
